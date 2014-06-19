@@ -1,0 +1,16 @@
+org.wso2.carbon.utils_4.2.0.jar:a806a9cc8d132794dfcbfbc7d743e915
+wss4j_1.5.11.wso2v6.jar:6af11b00c0d4c20c933454cdc4346522
+javax.cache.wso2_4.2.0.jar:089ed7a98850aa3723207c6f3f1768d2
+org.wso2.carbon.user.core_4.2.0.jar:da755deac51edc3a9b06bdb67993f218
+axis2-transport-jms_1.1.0.wso2v9.jar:b5a82def11563b9c293474526c7f02f6
+org.wso2.carbon.registry.core_4.2.0.jar:94f2340a1e11a67d9e5d2927b1d8fbdb
+org.wso2.carbon.application.deployer_4.2.0.jar:c620fa278f44b8b338a6511824cb4d9c
+httpcore_4.3.0.wso2v1.jar:4db3b86a7a814670c8b1ae9eeb27b7d4
+org.wso2.carbon.core_4.2.0.jar:a6d5cb417d9fc7ad2162b6ac2ff5ed99
+org.wso2.carbon.tomcat.ext_4.2.0.jar:c5e086e751732f9abeccf7c9f7bbbbbd
+spring.framework_3.1.0.wso2v1.jar:bf208e0301929bd0a6482626771bc7ae
+axiom_1.2.11.wso2v4.jar:d0b5b01650ca4faae96a54bbc733441f
+org.wso2.carbon.core.services_4.2.0.jar:b6e7fac5646a39c464683ad84490d786
+org.wso2.carbon.tomcat_4.2.0.jar:41fdaf9d98224ab34ab1982e91e184a5
+axis2_1.6.1.wso2v10.jar:3b297ce1e609817bd52e52407867da66
+org.wso2.carbon.server.admin_4.2.0.jar:cecd6f71ea25abd2560682523231adda

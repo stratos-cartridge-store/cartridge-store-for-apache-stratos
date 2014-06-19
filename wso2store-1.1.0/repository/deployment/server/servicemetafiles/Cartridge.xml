@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><serviceGroup name="Cartridge" successfullyAdded="true">
+    <service name="Cartridge" exposedAllTransports="false" serviceDeployedTime="1403153027321" successfullyAdded="true">
+        <operation name="getCartridge">
+            <parameter name="AuthorizationAction">/permission/admin/manage/resources/govern/cartridge/list</parameter>
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+            <module name="pagination" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="getCartridgeDependencies">
+            <parameter name="AuthorizationAction">/permission/admin/manage/resources/govern/cartridge/list</parameter>
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+            <module name="pagination" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="getCartridgeArtifactIDs">
+            <parameter name="AuthorizationAction">/permission/admin/manage/resources/govern/cartridge/list</parameter>
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+            <module name="pagination" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="updateCartridge">
+            <parameter name="AuthorizationAction">/permission/admin/manage/resources/govern/cartridge/add</parameter>
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+            <module name="pagination" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="deleteCartridge">
+            <parameter name="AuthorizationAction">/permission/admin/manage/resources/govern/cartridge/add</parameter>
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+            <module name="pagination" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="addCartridge">
+            <parameter name="AuthorizationAction">/permission/admin/manage/resources/govern/cartridge/add</parameter>
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+            <module name="pagination" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <bindings>
+            <binding name="CartridgeHttpBinding">
+                <operation name="getCartridge"/>
+                <operation name="getCartridgeDependencies"/>
+                <operation name="updateCartridge"/>
+                <operation name="getCartridgeArtifactIDs"/>
+                <operation name="addCartridge"/>
+                <operation name="deleteCartridge"/>
+            </binding>
+            <binding name="CartridgeSoap12Binding">
+                <operation name="getCartridge"/>
+                <operation name="getCartridgeDependencies"/>
+                <operation name="updateCartridge"/>
+                <operation name="getCartridgeArtifactIDs"/>
+                <operation name="addCartridge"/>
+                <operation name="deleteCartridge"/>
+            </binding>
+            <binding name="CartridgeSoap11Binding">
+                <operation name="getCartridge"/>
+                <operation name="getCartridgeDependencies"/>
+                <operation name="updateCartridge"/>
+                <operation name="getCartridgeArtifactIDs"/>
+                <operation name="addCartridge"/>
+                <operation name="deleteCartridge"/>
+            </binding>
+        </bindings>
+        <policies/>
+        <module name="addressing" version="4.2.0" type="engagedModules"/>
+        <module name="pagination" version="4.2.0" type="engagedModules"/>
+        <parameter name="enableMTOM">true</parameter>
+        <parameter name="adminService">true</parameter>
+        <parameter name="AuthorizationAction">/permission/admin/login</parameter>
+        <parameter name="hiddenService">true</parameter>
+        <association destinationPath="/repository/transports/https/listener" type="exposedTransports"/>
+    </service>
+</serviceGroup>
