@@ -233,34 +233,6 @@ require('/modules/publisher.js').exec(function(ctx) {
 
             model.import('form.importer', context.post);
 
-            /*
-            //-----------------------------------------------------------------------------------
-            //log.info('-----------------------File :  ' + file.toString());
-            log.info('-----------------------Name :  ' + request.getParameter('overview_name').toString());            
-            log.info('-----------------------URL :  ' + request.getParameter('overview_version').toString());
-
-            var fileO = model.get('overview.url').value;
-            //var Str1 = model.request.getAllFiles();
-            //log.info('-----------------------File :  ' + file.getName());
-            //log.info('-----------------------Path :  ' + file.getPath());
-            //log.info('-----------------------length :  ' + file.getStream().getLength());
-
-           //----------------------------assigining checksum-------------------      
-            log.info('--------------------checksumGen----------------------' + fileO);
-
-            var md5 = Packages.wso2.org.checksum.gen.MD5;
-            var myMD5 = new md5();
-            var checksumVal = myMD5.md5();
-            var file1 = "/publisher/storage/cartridge/b8f2ce39-2da2-4c52-9b19-ec21fd40eb20/3d8bdcfb-03b7-471d-b67e-f4a471ec90bc/mysql_new.tar.gz";
-
-            var checksumVValue = myMD5.getMD5Checksum(file1);
-            //log.info('----------------      checksumVValue    ++++++++++++++++++++++'+checksumVValue);
-            
-            log.info('--- checksum: '+ checksumVal);
-            log.info('--- checksumVal: '+ checksumVValue);
-            //-------------------------------------------------------------
-
-            */
             //Perform validation on the model
 
             var report = model.validate();

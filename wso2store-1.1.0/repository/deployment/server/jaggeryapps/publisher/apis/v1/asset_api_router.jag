@@ -280,14 +280,14 @@ function inspectFiles(req, params) {
                 var md5ChecksumGen = Packages.wso2.org.checksum.gen.MD5;
                 var checksumValue = md5ChecksumGen.getMD5Checksum(file.getStream().getStream());
                 params.overview_checksum=checksumValue;
-                log.info('-----------------checksum added----------------------------------------------'+file.getName());
+                //log.info('-----------------checksum added----------------------------------------------'+file.getName());
             } 
 
         //log.info('============================================================='+file.getName());
               
     }
 }
-
+/
 routeManager.register('PUT', 'publisher', '/publisher/api/asset/{type}/{id}', function (context) {
     var shortName = context.params.type;
     var id = context.params.id;
