@@ -29,7 +29,7 @@
                 <name>Name</name>
             </field>
             <field type="text" required="true">
-                <name label="Deployable Name">DeployableName</name>
+                <name label="Deployable Name">deployablename</name>
             </field>
 	    <field type="text">
                 <name>Organization</name>
@@ -78,3 +78,4 @@
     </content>
 
 </artifactType>
+
