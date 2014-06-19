@@ -55,9 +55,11 @@
                                 				<div class="tbl-upload-cell">
                                 					<button class="btn btn-upload">Browse</button>
                                    					<input class='fm-managed' id='{{this.name}}' type='file' name='{{this.name}}' data-use-plugins="DefaultFileUploadPlugin,RequiredField" data-required='{{this.isRequired}}'/>
-                                                    {{#if this.isDownloadable}}                                                            
-                                                        <label>upload ".tar.gz"</label>
-                                                    {{/if}} 
+                                                                
+                                                       {{#if this.fileExtension}}                                                      
+                                                          <label>upload "{{this.fileExtension}}"</label>
+                                                       {{/if}}                                                    
+
                                 				</div>
                                 			</div>
                                 		</div>

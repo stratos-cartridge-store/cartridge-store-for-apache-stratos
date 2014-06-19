@@ -72,7 +72,7 @@ var module = function () {
 
             data['columnLabels'] = [];
             data['columnNames'] = [];
-
+            data['extension'] = [];
 
             //Go through all the fields in the table
             for (var key in table.fields) {
@@ -273,7 +273,7 @@ var module = function () {
         data['isEditable'] = (fieldTemplate.meta.editable) ? fieldTemplate.meta.editable : false;
         data['isFile'] = (fieldTemplate.type == 'file') ? true : false;
 	data['isDownloadable'] = (fieldTemplate.meta.downloadable) ? fieldTemplate.meta.downloadable : false;
-
+    data['fileExtension'] = (fieldTemplate.fileExtension) ? fieldTemplate.fileExtension : '';
 
         data['value'] = field.value;
 
@@ -326,6 +326,7 @@ var module = function () {
                 data['isEditable'] = (fieldTemplate.meta.editable) ? fieldTemplate.meta.editable : false;
                 data['isFile'] = (fieldTemplate.type == 'file') ? true : false;
 		data['isDownloadable'] = (fieldTemplate.meta.downloadable) ? fieldTemplate.meta.downloadable : false;
+        data['fileExtension'] = (fieldTemplate.meta.fileExtension) ? fieldTemplate.meta.fileExtension : '';
 
                 //log.info(field.name+' = '+stringify(field.value));
 
