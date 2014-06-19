@@ -7,7 +7,15 @@ $(document).ready(function(){
 
         str = str.replace(re, '_');
         $('#overview_deployablename').val(str);
-        
     });
+});
+
+$('INPUT[type="file"]').change(function () {
+    var ext = this.value.match(/\.(.+)$/)[1];
+
+	if($.inArray(ext, ['gif','png','jpg','jpeg','tar.gz']) == -1) {
+	    alert('invalid extension!');
+	}
+
 });
 
