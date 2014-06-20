@@ -26,7 +26,7 @@ $('INPUT[ext="tar.gz"]').change(function () {
     var ext = this.value.match(/\.(.+)$/)[1];
 
     if($.inArray(ext, ['tar.gz']) == -1) {
-        alert('invalid extension!!!');
+        alert('Invalid file extension type. Please upload a "tar.gz" file.');
         this.value = '';
     }
 
