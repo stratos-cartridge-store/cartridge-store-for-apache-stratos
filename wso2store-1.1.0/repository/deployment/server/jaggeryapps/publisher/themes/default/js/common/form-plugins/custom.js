@@ -10,11 +10,23 @@ $(document).ready(function(){
     });
 });
 
+/*
 $('INPUT[type="file"]').change(function () {
     var ext = this.value.match(/\.(.+)$/)[1];
 
     if($.inArray(ext, ['gif','png','jpg','jpeg','tar.gz']) == -1) {
         alert('invalid extension!');
+        this.value = '';
+    }
+
+});
+*/
+
+$('INPUT[ext="tar.gz"]').change(function () {
+    var ext = this.value.match(/\.(.+)$/)[1];
+
+    if($.inArray(ext, ['tar.gz']) == -1) {
+        alert('invalid extension!!!');
         this.value = '';
     }
 

@@ -23,12 +23,12 @@
 
                             <div class="controls">
                                 {{#if this.isTextBox}}
-                                	{{#if isReadOnly}}
-                                		<input type="hidden" name='{{this.name}}' value='{{this.value}}'/>
-                                		<input id='{{this.name}}' type='text' value='{{this.value}}'  class="span8 fm-managed" data-use-plugins="TextFieldValueExtractor,ReadOnlyField" data-ready-only="{{this.isReadOnly}}"/>
-                                	{{else}}
-                                		<input id='{{this.name}}' name='{{this.name}}' type='text' value='{{this.value}}'  class="span8 fm-managed"  data-use-plugins='RequiredField,TextFieldValueExtractor' data-ready-only='{{this.isReadOnly}}' data-required='{{this.isRequired}}' />
-                                	{{/if}}
+                                    {{#if isReadOnly}}
+                                        <input type="hidden" name='{{this.name}}' value='{{this.value}}'/>
+                                        <input id='{{this.name}}' type='text' value='{{this.value}}'  class="span8 fm-managed" data-use-plugins="TextFieldValueExtractor,ReadOnlyField" data-ready-only="{{this.isReadOnly}}"/>
+                                    {{else}}
+                                        <input id='{{this.name}}' name='{{this.name}}' type='text' value='{{this.value}}'  class="span8 fm-managed"  data-use-plugins='RequiredField,TextFieldValueExtractor' data-ready-only='{{this.isReadOnly}}' data-required='{{this.isRequired}}' />
+                                    {{/if}}
 
                                 {{/if}}
                                 {{#if this.isDate}}
@@ -46,25 +46,25 @@
                                     <textarea id='{{this.name}}' value='{{this.value}}' class="span8 fm-managed" name='{{this.name}}'data-use-plugins="TextFieldValueExtractor"></textarea>
                                 {{/if}}
                                 {{#if this.isFile}}
-                                	<div class="span8">
-                                		<div class="tbl-upload">
-                                			<div class="tbl-upload-row">
-                                				<div class="tbl-upload-cell">
-                                					 <input type="text" class="txt-filepath" disabled="true"/>
-                                				</div>
-                                				<div class="tbl-upload-cell">
-                                					<button class="btn btn-upload">Browse</button>
-                                   					<input class='fm-managed' id='{{this.name}}' type='file' name='{{this.name}}' data-use-plugins="DefaultFileUploadPlugin,RequiredField" data-required='{{this.isRequired}}'/>
+                                    <div class="span8">
+                                        <div class="tbl-upload">
+                                            <div class="tbl-upload-row">
+                                                <div class="tbl-upload-cell">
+                                                     <input type="text" class="txt-filepath" disabled="true"/>
+                                                </div>
+                                                <div class="tbl-upload-cell">
+                                                    <button class="btn btn-upload">Browse</button>
+                                                    <input class='fm-managed' id='{{this.name}}' type='file' name='{{this.name}}' data-use-plugins="DefaultFileUploadPlugin,RequiredField" data-required='{{this.isRequired}}' ext='{{this.fileExtension}}'/>
                                                                 
                                                        {{#if this.fileExtension}}                                                      
                                                           <label>upload "{{this.fileExtension}}"</label>
                                                        {{/if}}                                                    
 
-                                				</div>
-                                			</div>
-                                		</div>
+                                                </div>
+                                            </div>
+                                        </div>
 
-                                	</div>
+                                    </div>
                                 {{/if}}
                                 {{#if this.isOptionsText}}
                                     <div id="{{this.name}}" name='{{this.name}}' class="options-text fm-managed" data-add-button="Add {{this.label}}" data-selected="" data-options="{{this.valueList}}"
@@ -95,23 +95,23 @@
                             </div>
                         </div>
 
-						<div class="control-group">
-							<b><label class="control-label">Tags: </label></b>
-							<div class="controls">
-								<input type='text' id='tag-container' class='fm-managed' name='tag-container' data-field-name='tags' data-use-plugins="TagPlugin" data-tag-api='/publisher/api/tag/'>
-							</div>
-						</div>
+                        <div class="control-group">
+                            <b><label class="control-label">Tags: </label></b>
+                            <div class="controls">
+                                <input type='text' id='tag-container' class='fm-managed' name='tag-container' data-field-name='tags' data-use-plugins="TagPlugin" data-tag-api='/publisher/api/tag/'>
+                            </div>
+                        </div>
 
 
                         <div id="saveButtons" class="form-actions">
-                        	<input type='button' id="btn-create-asset" class="btn btn-primary" name="addNewAssetButton" value='{{t "Create"}}'>
-                      		<button class="btn" type="reset">{{t "Reset"}}</button>
-			                <input type="hidden" value="{{shortName}}" name="{{shortName}}" id="meta-asset-type">
+                            <input type='button' id="btn-create-asset" class="btn btn-primary" name="addNewAssetButton" value='{{t "Create"}}'>
+                            <button class="btn" type="reset">{{t "Reset"}}</button>
+                            <input type="hidden" value="{{shortName}}" name="{{shortName}}" id="meta-asset-type">
                         </div>
                     </form>
                 </div>
 
             </div>
-	    </div>
+        </div>
     </div>
 </div>

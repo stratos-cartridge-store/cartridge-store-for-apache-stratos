@@ -69,8 +69,8 @@
                                                     <a id="download-{{this.name}}" href="{{this.value}}" >Download Artifacts</a>
                                                 {{else}} 
                                                     <img id="img-preview-{{this.name}}" src="{{this.value}}" alt="{{this.value}}">
-                                                {{/if}} 			
-                                            </td>					   
+                                                {{/if}}             
+                                            </td>                      
                                         </tr>
                                         <tr>
                                             <td>
@@ -89,7 +89,8 @@
                                                                    data-required="{{this.isRequired}}"
                                                                    data-use-plugins="FileUpdatePlugin"
                                                                    data-ready-only="{{this.isReadOnly}}"
-                                                                   data-original-file='{{this.value}}'/>
+                                                                   data-original-file='{{this.value}}' 
+                                                                   ext ='{{this.fileExtension}}'/>
                                                         </td>
                                                     </tr>
                                                 </table>
