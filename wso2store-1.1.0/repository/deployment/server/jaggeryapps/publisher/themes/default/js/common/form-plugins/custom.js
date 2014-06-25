@@ -22,12 +22,15 @@ $('INPUT[type="file"]').change(function () {
 });
 */
 
-$('INPUT[ext="tar.gz"]').change(function () {
+$('INPUT[ext]').change(function () {
     var ext = this.value.match(/\.(.+)$/)[1];
+    var incoming = $(this).attr('ext');
 
-    if($.inArray(ext, ['tar.gz']) == -1) {
-        alert('Invalid file extension type. Please upload a "tar.gz" file.');
-        this.value = '';
+    if(incoming){
+        if($.inArray(ext, [incoming,""]) == -1) {
+            alert('Invalid file extension type. Please upload a "'+ incoming+'" file.');
+            this.value = '';
+        }
     }
 
 });
